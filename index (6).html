@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles (2).css">
+</head>
+<body>
+ 
+
+  <input type="checkbox" id="cinema" hidden>
+<label for="cinema" class="cinema-btn">🎬</label>
+
+  <div class="dna"></div>
+
+ <input type="checkbox" id="enter-site" hidden>
+
+<div class="preloader">
+  <div class="ring"></div>
+  <label for="enter-site" class="enter-btn">ENTER</label>
+</div>
+
+<div class="site">
+
+<header>
+   <div class="header-inner">
+    
+    <div class="logo">🎌 Anime Catalog</div>
+    <nav class="nav">
+    <div class="menu">
+    <a href="#">Главная</a>
+    <a href="#bloc1">Каталог</a>
+    <a href="#footer">О сайте</a>
+  </div>
+</nav>
+  </div>
+  
+</header>
+
+<div class="smoke"></div>
+
+
+
+<div class="container">
+
+  <aside>
+  
+<span class="badge">TOP</span>
+    <h2 class="spisoc">Список аниме</h2>
+    
+    <a class="a1" href="#bloc1">Naruto</a> 
+      <a class="a2" href="#bloc2">Attack on Titan</a>
+     <a class="a3" href="#bloc3">Death Note</a>
+     <a class="a4" href="#bloc4">Demon Slayer</a> 
+     <a class="a5" href="#bloc5">One Piece</a>
+     <a class="a6" href="#bloc6">Bleach</a>
+     <a class="a2" href="#bloc7">Tokyo Ghoul</a>
+     <a class="a2" href="#bloc8">Jujutsu Kaisen</a>
+     <a class="a9" href="#bloc9">Fullmetal Alchemist</a>
+     <a class="a10" href="#bloc10">Dragon Ball</a> 
+  </aside>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+   
+<input type="radio" name="filter" id="all" checked hidden>
+<input type="radio" name="filter" id="action" hidden>
+<input type="radio" name="filter" id="drama" hidden>
+
+<div class="filters">
+  <label for="all">ВСЕ</label>
+  <label for="action">ЭКШЕН</label>
+  <label for="drama">ДРАМА</label>
+</div>
+
+  <main>
+
+    <div id="bloc1"  class="anime">
+      <h2>Naruto</h2>
+      <img src="1.png" alt="Naruto">
+      <p>Аниме рассказывает историю Наруто Узумаки — юного ниндзя из деревни Скрытого Листа, который с детства был изгоем. Внутри него запечатан Девятихвостый Лис, поэтому жители деревни сторонились его. Несмотря на это, Наруто не сдаётся и мечтает стать Хокаге. Его путь — это долгие тренировки, опасные миссии, дружба, потери и постепенное взросление, где он учится понимать ценность людей вокруг себя.</p>
+      <a  target="_blank" href="https://www.crunchyroll.com/series/GY9PJ5KWR/naruto">Cмотреть</a>
+      <h4 class="rating">⭐ 9.2 / 10</h4>
+      <div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+    <div id="bloc2" class="anime">
+      <h2>Attack on Titan</h2>
+      <img src="2.png" alt="Attack on Titan">
+      <p>Человечество долгие годы пряталось за высокими стенами, спасаясь от титанов — огромных существ, пожирающих людей. Эрен Йегер теряет родной дом и мать, после чего решает посвятить жизнь борьбе с титанами. Сюжет постепенно раскрывается и превращается в сложную драму о войне, свободе, страхе и цене, которую приходится платить за выживание.</p>
+        <a  target="_blank" href="https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan">Cмотреть</a>
+<h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+ 
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+</div>
+
+    </div>
+
+    <div id="bloc3" class="anime">
+      <h2>Death Note</h2>
+      <img src="8.png" alt="Death Note">
+      <p>Лайт Ягами — лучший ученик школы, которому в руки попадает загадочная тетрадь смерти. Используя её, он начинает вершить собственное правосудие, уничтожая преступников. Однако его действия привлекают внимание гениального детектива L. Их противостояние превращается в напряжённую интеллектуальную битву, где каждая ошибка может стоить жизни.</p>
+        <a  target="_blank" href="https://www.crunchyroll.com/series/G6QWD3EE6/death-note">Cмотреть</a>
+        <h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+    <div id="bloc4" class="anime">
+      <h2>Demon Slayer</h2>
+      <img src="5.png" alt="Demon Slayer">
+      <p>Танджиро Камадо после гибели семьи становится истребителем демонов, чтобы спасти сестру Незуко, превращённую в демона. Его путь наполнен тяжёлыми тренировками, жестокими сражениями и постоянной борьбой с отчаянием. Аниме выделяется эмоциональной историей, красивой анимацией и темой семейных уз.</p>
+        <a  target="_blank" href="https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba">Cмотреть</a>
+        <h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+    <div id="bloc5" class="anime">
+      <h2>One Piece</h2>
+      <img src="6.png" alt="One Piece">
+      <p>Луффи отправляется в большое путешествие, чтобы найти легендарное сокровище One Piece и стать Королём пиратов. Вместе с командой он исследует новые острова, сражается с сильными врагами и помогает тем, кто оказался в беде. Это длинная история о мечтах, дружбе и свободе.</p>
+      <a  target="_blank" href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece">Cмотреть</a>
+      <h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+    <div id="bloc6" class="anime">
+      <h2>Bleach</h2>
+      <img src="7.png" alt="Bleach">
+      <p>Ичиго Куросаки — подросток, способный видеть духов. После встречи с проводником душ он получает сверхъестественные силы и начинает защищать людей от злых духов. Со временем история перерастает в масштабное противостояние миров, где поднимаются темы долга, силы и ответственности.</p>
+        <a  target="_blank" href="https://www.crunchyroll.com/series/G63VGG2NY/bleach">Cмотреть</a>
+        <h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+<details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+    <div id="bloc7" class="anime">
+      <h2>Tokyo Ghoul</h2>
+      <img src="3.png" alt="Tokyo Ghoul">
+      <p>После несчастного случая Кэн Канэки становится наполовину гулем — существом, питающимся людьми. Он вынужден жить между двумя мирами, не принадлежа полностью ни одному из них. Аниме исследует тёмные стороны человеческой души, боль, одиночество и поиск собственной личности.</p>
+      <a  target="_blank" href="https://www.crunchyroll.com/series/G6NV7Z50Y/tokyo-ghoul">Cмотреть</a>
+      <h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+    <div id="bloc8" class="anime">
+      <h2>Jujutsu Kaisen</h2>
+      <img src="4.png" alt="Jujutsu Kaisen">
+      <p>Юдзи Итадори случайно становится носителем древнего проклятия и вступает в мир магов, сражающихся с проклятыми духами. История сочетает в себе динамичные бои, мрачную атмосферу и философские размышления о жизни и смерти.</p>
+        <a  target="_blank" href="https://www.crunchyroll.com/series/GY9PJ5KWR/jujutsu-kaisen">Cмотреть</a>
+        <h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+    <div id="bloc9" class="anime">
+      <h2>Fullmetal Alchemist</h2>
+      <img src="9.png" alt="Fullmetal Alchemist">
+      <p>Братья Элрики, нарушив запрет алхимии, отправляются в опасное путешествие, чтобы вернуть утраченное. По дороге они сталкиваются с войной, жестокостью и моральными дилеммами. Это глубокая и трогательная история о цене ошибок и искуплении.</p>
+        <a  target="_blank"href="https://www.crunchyroll.com/series/G6P8K7JZR/fullmetal-alchemist-brotherhood">Cмотреть</a>
+        <h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+    <div id="bloc10" class="anime">
+      <h2>Dragon Ball</h2>
+      <img src="10.png" alt="Dragon Ball">
+      <p>Сон Гоку с детства обладает невероятной силой и отправляется в путешествие, полное сражений и приключений. Он защищает Землю от могущественных врагов и постоянно становится сильнее. Аниме стало классикой жанра и символом бесконечного стремления к развитию.</p>
+        <a  target="_blank" href="https://www.crunchyroll.com/series/G6NQ5DWZY/dragon-ball">Cмотреть</a>
+        <h4 class="rating">⭐ 9.2 / 10</h4>
+<div class="tags">
+  <span>Экшен</span>
+  <span>Драма</span>
+  <span>Фэнтези</span>
+</div>
+
+
+  <!-- Рейтинг -->
+  <div class="rating">
+    <input type="radio" id="star5" name="rate1" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rate1" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rate1" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rate1" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rate1" value="1"><label for="star1">★</label>
+  </div>
+
+  <!-- Комментарий -->
+  <details>
+    <summary>💬 Комментарии</summary>
+    <div class="comments">
+      <p>Очень крутое аниме, рекомендую всем!</p>
+    </div>
+    <textarea placeholder="Напиши комментарий..." rows="2"></textarea>
+    <button class="add-comment">Отправить</button>
+  </details>
+    </div>
+
+  </main>
+</div>
+
+<footer id="footer">
+  <div class="credits">Thanks for watching ✨</div>
+
+  © 2025 Anime Catalog — Все права защищены
+  Автор:Набиев Мустафо
+</footer>
+<script>
+function toggleSidebar() {
+  document.querySelector("aside").classList.toggle("closed");
+}
+</script>
+
+<script>
+
+document.querySelectorAll("aside a").forEach(a =>
+  a.onclick = () => {
+    document.querySelectorAll("aside a").forEach(l => l.classList.remove("active"));
+    a.classList.add("active");
+  }
+);
+
+
+</script>
+<script>
+document.querySelectorAll('.add-comment').forEach(btn => {
+  btn.onclick = () => {
+    const textarea = btn.previousElementSibling;
+    const commentsDiv = btn.previousElementSibling.previousElementSibling;
+    if(textarea.value.trim() !== "") {
+      const p = document.createElement("p");
+      p.textContent = textarea.value;
+      commentsDiv.appendChild(p);
+      textarea.value = "";
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>

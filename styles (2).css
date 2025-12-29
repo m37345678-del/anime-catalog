@@ -1,0 +1,998 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+ background-color: #0d1431; /* базовый цвет */
+  background-image: linear-gradient(135deg, #0d1431, #120b2e, #2a0d1f);
+  background-attachment: fixed; /* фиксируем фон */
+   
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+  
+  
+}
+
+
+  
+
+
+.site-header {
+  background: rgba(22,26,34,0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+.nav a:hover {
+  color: #a78bfa;
+}
+
+header {
+  background: #161a22;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #2a2f45;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+ width: 220px;
+  padding: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+
+  background: rgba(22, 26, 34, 0.55); /* ← ВАЖНО */
+  border-right: 1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  overflow-y: auto;
+}
+
+main {
+  flex: 1;
+  padding: 30px;
+  margin-left: 260px; 
+}
+
+.anime {
+  background: #161a22;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 30px;
+    background: rgba(22, 26, 34, 0.55); /* ← ВАЖНО */
+  border-right: 1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  overflow-y: auto;
+}
+
+.anime img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  /* ВСЕГДА яркие и цветные */
+  filter: brightness(1.2) saturate(1.5) grayscale(0%);
+  transition: transform 0.6s, filter 0.6s;
+}
+
+/* На hover оставляем только увеличение, без ч/б */
+.anime img:hover {
+  transform: scale(1.1); /* можно оставить эффект увеличения */
+  filter: brightness(1.2) saturate(1.5) grayscale(0%);
+}
+footer {
+  background: #161a22;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #2a2f45;
+  color: #aaa;
+}
+
+a{
+    display: inline-block;     
+    padding: 12px 24px;         
+    background: #e91717;        
+    color: white;             
+    border-radius: 10px;      
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+    text-decoration: none; 
+    color: white;  
+    transition: 0.6s;     
+}
+
+a:hover{
+scale: 1.1;
+}
+
+.a1{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a2{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a3{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a4{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a5{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a6{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a7{
+margin-bottom: 5px;
+background: #0f1115;
+}
+
+.a7{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a8{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a9{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+.a10{
+margin-bottom: 5px;
+background: #0f1115;
+color: #e91717;
+}
+
+
+
+.toggle-btn {
+  position: fixed;
+  top: 90px;
+  left: 250px;
+  z-index: 1000;
+
+  background: rgba(22,26,34,0.8);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+
+aside.closed {
+  transform: translateX(-260px);
+}
+aside.closed + .toggle-btn {
+  left: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.anime {
+  background: rgba(22, 26, 34, 0.55);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 30px;
+
+
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: 0.4s;
+   border: 1px solid red;
+ 
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(233, 23, 23, 0.3);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(233, 23, 23, 0.8);
+  }
+}
+
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 22px;
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #444;
+  cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating input:checked ~ label ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
+
+
+.anime:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: 0.4s;
+  
+  box-shadow: 0 0 30px rgba(233, 23, 23, 0.7);
+  transform: translateY(-5px);
+}
+
+
+
+.anime:target {
+  outline: 2px solid #e91717;
+}
+
+.badge {
+  background: rgb(243, 57, 94);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.tags span {
+  background: rgba(233, 15, 15, 0.596);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.anime p {
+  color: rgba(233, 23, 23, 0.85);
+  line-height: 1.6;
+}
+
+.anime h2{
+  color: #aaa;
+}
+
+aside a.active {
+   background: #e91717;
+  color: white;
+}
+
+.logo{
+color: #da2494;
+}
+
+.spisoc{
+  color: aliceblue;
+}
+
+
+
+
+
+
+.counter {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: none;
+  text-align: center;
+  line-height: 18px;
+}
+
+
+
+/* Рейтинг звездочками */
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 22px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #444;
+  cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
+
+.comments p {
+  background: rgba(255,0,0,0.1);
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 4px 0;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 6px;
+  padding: 6px;
+  resize: none;
+}
+
+button.add-comment {
+  margin-top: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #e91717;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #120b2e, #000);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  transition: 1s;
+}
+
+#enter-site:checked + .preloader {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ring {
+  width: 120px;
+  height: 120px;
+  border: 4px solid transparent;
+  border-top: 4px solid red;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+.enter-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 2px solid red;
+  color: red;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.enter-btn:hover {
+  background: red;
+  color: white;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.glitch {
+  position: relative;
+  color: #fff;
+  font-size: 28px;
+  font-family: Montserrat;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.glitch::before {
+  color: red;
+  animation: glitch 2s infinite linear alternate;
+}
+
+.glitch::after {
+  color: cyan;
+  animation: glitch 1.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px,2px); }
+  40% { transform: translate(2px,-2px); }
+  60% { transform: translate(-2px,1px); }
+  80% { transform: translate(2px,-1px); }
+  100% { transform: translate(0); }
+}
+
+a {
+  position: relative;
+  overflow: hidden;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.4), transparent);
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+a:hover::after {
+  transform: scale(1.5);
+}
+
+.anime:hover h2 {
+  text-shadow: 0 0 15px red;
+}
+
+
+.anime {
+  position: relative;
+  overflow: hidden;
+}
+
+.anime::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255,255,255,0.15),
+    transparent 70%
+  );
+  transform: translateX(-100%);
+  transition: 0.8s;
+}
+
+.anime:hover::before {
+  transform: translateX(100%);
+}
+.dna {
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,0,0,0.05) 0 2px,
+      transparent 2px 20px
+    );
+  animation: dnaMove 10s linear infinite;
+  z-index: -3;
+}
+
+@keyframes dnaMove {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+.anime:hover {
+  box-shadow:
+    0 0 30px rgba(255,0,0,0.6),
+    inset 0 0 40px rgba(255,0,0,0.4);
+}
+.cinema-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#cinema:checked ~ .container {
+  filter: contrast(1.2) saturate(1.4);
+}
+
+#cinema:checked ~ header,
+#cinema:checked ~ footer {
+  opacity: 0.2;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.02) 0,
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+.anime img {
+  transition: transform 0.6s ease;
+}
+
+
+.anime h2 {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.anime h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  height: 2px;
+  background: linear-gradient(90deg, red, transparent);
+}
+.fog {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: radial-gradient(
+    ellipse at bottom,
+    rgba(255,0,0,0.25),
+    transparent 70%
+  );
+  animation: fogMove 6s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes fogMove {
+  from { opacity: 0.4; }
+  to { opacity: 0.7; }
+}
+main {
+  counter-reset: anime;
+}
+
+.anime::after {
+  counter-increment: anime;
+  content: "#" counter(anime);
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+}
+
+
+main:hover .anime:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  z-index: 2;
+}
+
+a:hover,
+button:hover,
+.anime:hover {
+  filter: drop-shadow(0 0 12px red);
+}
+::selection {
+  background: red;
+  color: black;
+}
+.anime:hover img {
+  filter: grayscale(100%) contrast(1.2);
+}
+.anime {
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.4),
+    inset 0 0 0 rgba(255,0,0,0);
+}
+
+.anime:hover {
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.6),
+    inset 0 0 30px rgba(255,0,0,0.4);
+}
+
+
+a:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px red;
+}
+.credits {
+  opacity: 0.6;
+  animation: fadeCredits 4s ease-in-out infinite;
+}
+
+@keyframes fadeCredits {
+  0%,100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+
+@keyframes holo {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.smoke {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.ibb.co/7G0C7Tp/smoke.png') repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  animation: moveSmoke 60s linear infinite;
+}
+
+@keyframes moveSmoke {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 0; }
+}
+.anime {
+  background: rgba(22, 26, 34, 0.85); /* было 0.55 → стало 0.85 */
+  color: #fff; /* белый текст для контраста */
+  padding: 20px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.4s;
+}
+.anime p {
+  color: #f5f5f5; /* яркий бело-серый текст */
+  line-height: 1.6;
+}
+
+.anime h2 {
+  color: #ff4f4f; /* неон-красный для заголовков */
+  text-shadow: 0 0 5px rgba(255,0,0,0.7);
+}
+
+.tags span {
+  background: rgba(233, 15, 15, 0.8); /* чуть более яркие теги */
+  color: #fff;
+}
+.anime:hover p,
+.anime:hover h2 {
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+}
+/* Заголовки аниме */
+.anime h2 {
+  font-size: 28px; /* было 22px, увеличили */
+  color: #ff4f4f;
+  text-shadow: 0 0 5px rgba(255,0,0,0.7);
+  margin-bottom: 15px;
+}
+
+/* Основной текст аниме */
+.anime p {
+  font-size: 30px; /* было ~14-16px, увеличили */
+  color: #f5f5f5;
+  line-height: 1.8; /* чуть больше для удобного чтения */
+  margin-bottom: 15px;
+}
+
+/* Теги */
+.tags span {
+  font-size: 14px; /* было 12px */
+  background: rgba(233, 15, 15, 0.8);
+  color: #fff;
+  padding: 5px 12px;
+}
+button:hover,
+a:hover {
+  background: rgba(255, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 15px rgba(255,0,0,0.8);
+  transform: scale(1.15);
+}
+
+
+
+.anime {
+  position: relative;
+  background: rgba(22, 26, 34, 0.85);
+  padding: 20px;
+  border-radius: 14px;
+  color: #f5f5f5;
+  text-shadow: 0 0 5px rgba(255,0,0,0.7);
+  animation: pulseGlow 2.5s infinite alternate;
+}
+
+
+.anime h2 {
+  font-size: 30px;
+  color: #ff4f4f;
+  text-shadow: 
+    0 0 5px #ff4f4f, 
+    0 0 10px #ff2a2a, 
+    0 0 20px #ff1a1a;
+  animation: flicker 3s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 5px #ff4f4f, 0 0 10px #ff2a2a, 0 0 20px #ff1a1a;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.8;
+    text-shadow: 0 0 2px #ff2a2a, 0 0 5px #ff1a1a, 0 0 10px #ff1a1a;
+  }
+}
+.anime p {
+  font-size: 18px;
+  color: #f5f5f5;
+  line-height: 1.8;
+  animation: floatText 4s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+.tags span {
+  font-size: 14px;
+  background: linear-gradient(135deg, #ff2a2a, #ff6f6f);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  animation: glowTag 2s infinite alternate;
+}
+
+@keyframes glowTag {
+  from { box-shadow: 0 0 5px #ff2a2a; }
+  to { box-shadow: 0 0 15px #ff6f6f; }
+}
+.anime:hover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 16px;
+  background: radial-gradient(circle, rgba(255,0,0,0.3) 0%, transparent 70%);
+  animation: energyPulse 0.8s ease-out;
+  pointer-events: none;
+}
+
+@keyframes energyPulse {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+.tags span {
+  display: inline-block;
+  animation: shake 3s infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+.anime img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: 0.6s;
+  
+  /* добавляем цвет обратно */
+  filter: none; /* убираем черно-белый эффект */
+}
+.anime {
+  position: relative;
+  overflow: hidden;
+}
+
+.anime::before, .anime::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255,0,0,0.2) 0%, transparent 70%);
+  animation: sparks 4s linear infinite;
+}
+
+.anime::after {
+  animation-delay: 2s;
+}
+
+@keyframes sparks {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.anime img,
+.anime:hover img {
+  filter: none !important;
+}
+.anime::before,
+.anime::after {
+  pointer-events: none;
+}
+.anime a,
+.anime button {
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.anime a:hover,
+.anime button:hover {
+  box-shadow: 0 0 12px rgba(255,0,0,0.5);
+  transform: scale(1.08);
+}
+.anime img {
+  box-shadow: 0 0 15px rgba(255,0,0,0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.anime img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,0,0,)
+}
+.anime {
+  position: relative;
+  background: linear-gradient(135deg, rgba(25,20,40,0.85), rgba(35,25,55,0.85));
+  padding: 20px;
+  border-radius: 14px;
+  color: #f5f5f5;
+  overflow: hidden;
+  text-shadow: 0 0 3px rgba(200,150,255,0.5);
+
+  /* Плавный градиент и движение */
+  background-size: 300% 300%;
+  animation: softFlow 15s ease infinite;
+
+  /* Мягкая внутренняя подсветка */
+  box-shadow: 0 0 10px rgba(200,150,255,0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.anime:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 15px 30px rgba(200,150,255,0.25), inset 0 0 15px rgba(200,150,255,0.1);
+}
+
+.anime h2 {
+  font-size: 28px;
+  background: linear-gradient(90deg, #c896ff, #ffb0c4, #90d0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s infinite alternate;
+}
+
+.anime p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0ff;
+  animation: floatText 6s ease-in-out infinite;
+}
+
+.anime img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+  box-shadow: 0 0 15px rgba(200,150,255,0.2);
+}
+
+.anime img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 25px rgba(200,150,255,0.3);
+}
+
+/* Мягкие анимации */
+@keyframes softFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -300px; }
+  100% { background-position: 300px; }
+}
+
+@keyframes floatText {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(0px); }
+}
